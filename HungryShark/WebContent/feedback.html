@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.backgorundForm {
+	background-position: center;
+	color: black;
+}
+
+.dropdown {
+	width: 100%;
+}
+
+body {
+	background-image: url('assets/wb.jpg');
+}
+
+#submit {
+	padding: 5px 20px 5px 20px;
+}
+</style>
+<meta charset="UTF-8">
+<title>feedback Form</title>
+</head>
+<body>
+	<div class="backgorundForm" align="center">
+		<form action="/HungryShark/feedback" id="form" method="post">
+			<h2 align="center">Feedback Form</h2>
+			<table>
+				<tr>
+					<td><i><b>Game Rating</b></i></td>
+				</tr>
+				<tr>
+					<td>1.Ease of Learning:</td>
+					<td><select name="easeLearn" class="dropdown">
+							<option value="select">Select</option>
+							<option value="Poor">Poor</option>
+							<option value="Average">Average</option>
+							<option value="Good">Good</option>
+							<option value="Excellent">Excellent</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>2.Game Decisions:</td>
+					<td><select name="gameDecisions" class="dropdown">
+							<option value="select">Select</option>
+							<option value="Poor">Poor</option>
+							<option value="Average">Average</option>
+							<option value="Good">Good</option>
+							<option value="Excellent">Excellent</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>3.Interactivity:</td>
+					<td><select name="interactivity" class="dropdown">
+							<option value="select">Select</option>
+							<option value="Poor">Poor</option>
+							<option value="Average">Average</option>
+							<option value="Good">Good</option>
+							<option value="Excellent">Excellent</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>4.Fun/Enjoyable:</td>
+					<td><select name="fun" class="dropdown">
+							<option value="select">Select</option>
+							<option value="Poor">Poor</option>
+							<option value="Average">Average</option>
+							<option value="Good">Good</option>
+							<option value="Excellent">Excellent</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><i><b>Would you like to play again?</b></i></td>
+					<td><select name="playAgain" class="dropdown">
+							<option value="select">Select</option>
+							<option value="Yes">Yes</option>
+							<option value="May be">May Be</option>
+							<option value="No">No</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><i><b>What Difficulties you faced while playing
+								this game?</b></i></td>
+					<td><textarea name="difficulties" rows="3" cols="30"></textarea></td>
+				</tr>
+
+				<tr>
+					<td><i><b>What was your favorite part of this game?</b></i></td>
+					<td><textarea rows="3" cols="30" maxlength="150" name = "favorite_part"></textarea></td>
+				</tr>
+				<tr>
+					<td><i><b>Any Suggestion for Improvement:</b></i></td>
+					<td><textarea rows="3" cols="30" maxlength="150" name = "suggestions"></textarea></td>
+				</tr>
+				<tr>
+					<td><i><b>Additional Comments:</b></i></td>
+					<td><textarea rows="3" cols="30" maxlength="150" name="comments"></textarea></td>
+				</tr>
+			</table>
+			<input type="submit" id="submit" value="Submit" />
+		</form>
+	</div>
+</body>
+</html>

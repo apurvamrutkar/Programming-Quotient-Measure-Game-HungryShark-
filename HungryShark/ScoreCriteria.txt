@@ -1,0 +1,69 @@
+FOCUS = 
+
+The following is the formula to calculate how focused a person is while playing the game.
+
+			10.0 * (4 * patternCollected * 1.0 / patternProvided
+			    + 3 * (healthDecreaseProvided - healthDecreaseCollected) * 1.0 / healthDecreaseProvided 
+			    + 3 * healthIncreaseCollected * 1.0 / healthIncreaseProvided
+			);
+			
+It considers the factors of pattern detection and collection, how the person saves the shark from the health reducing parameters and how the person strives to increase the health of the shark.
+
+The focus parameter also becomes a crucial parameter as it is affected and at the same time distracted by the sound effects of
+the game.
+
+The sound effects also lead to emotional distraction and imbalance hence the performance will also contain the effects of its emotional qoutient.
+
+ACCURACY = 
+
+The following is the formula to calculate the accuracy of a person.
+
+100.0 * (scoreCollected * 1.0 / scoreProvided);
+
+
+The accuracy calculations of a person analyzes the ratio of resource collection to the total resources provided in the game.
+
+The resources in these calculations include the Collection of SCORING fishes (Green, Pink and Mega) only.
+
+This will check the mental and emotional balance of the person, as the person has to survive the game and maintain the accuracy as well.
+			
+LOGIC =  
+
+The following is the formula to calculate the Logic of a person.
+
+(3 * accuracy + 7 * focus )/10;
+
+Logic factor takes into consideration the accuracy of the user and the focus of the user as well.
+
+Logic is the most important judging parameter of a programmer and it can be derived by checking the person's accuracy and the focus together.
+
+If the person is focused and accurate then the person has a good Logical Thinking, vice a versa is also true.
+
+
+ADAPTABILITY = 
+
+The following is the formula to calculate the Adaptability of a person.
+
+(livesLost < 2 ? 5 : livesLost < 4 ? 4 : livesLost < 6 ? 3 : livesLost < 8 ? 2 : livesLost<10 ? 1 : 0) * 20;
+
+This parameter checks how adaptable a person is to the game. Assuming, the game is new to the person, adaptability factor proves important for a person to switch from one environment to another(programming environment).
+
+
+FLAW DETECTION = 
+
+The following is the formula to calculate the flaw detection skills of a person.
+
+flawTime * 100.0 / totalTime;
+
+We have created a flaw position in the game. If a person finds the position then the survival time of the person increases.
+
+But the person cannot remain only in the flaw position as this will reduce the accuracy and logic.
+
+OVERALL PERFORMANCE = 
+
+The following is the formula to calculate the flaw detection skills of a person.
+
+(7*focus + 2*accuracy + 4*logic + 3*adaptability + 4*flawDetection)/20;
+
+Read the above formula. Thank You.
+

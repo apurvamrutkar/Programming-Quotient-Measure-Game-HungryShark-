@@ -1,0 +1,9 @@
+Following are the queries to create a valid database:
+
+Copy from Line 5 to Line 38.
+
+CREATE DATABASE GameDatabase;
+
+CREATE TABLE GameDatabase.Gamers (id BIGINT(20) primary key NOT NULL AUTO_INCREMENT, name VARCHAR(50) NOT NULL, email VARCHAR (50) NOT NULL, score MEDIUMINT(9) NOT NULL, Logic Float, Adaptibility Float, Accuracy Float, FlawDetection Float, Focus Float, Overall Float);
+										
+CREATE TABLE LevelTimeData(gamer_id BIGINT(20),5sec INT(2),10sec INT(2),15sec INT(2),20sec INT(2),25sec INT(2),30sec INT(2),35sec INT(2),40sec INT(2),45sec INT(2),50sec INT(2),55sec INT(2),60sec INT(2),65sec INT(2),70sec INT(2),75sec INT(2),80sec INT(2),85sec INT(2),90sec INT(2),95sec INT(2),100sec INT(2),105sec INT(2),110sec INT(2),115sec INT(2),120sec INT(2),125sec INT(2),130sec INT(2),135sec INT(2),140sec INT(2),145sec INT(2),150sec INT(2),155sec INT(2),160sec INT(2),165sec INT(2),170sec INT(2),175sec INT(2),180sec INT(2),185sec INT(2),190sec INT(2),195sec INT(2),200sec INT(2),205sec INT(2),210sec INT(2),215sec INT(2),220sec INT(2),)

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hungry Shark</title>
+<style type="text/css">
+	#gameDiv{
+		background-image: url('assets/Lbackground.jpg');
+		width: 80%;
+		height: 100%;
+		background-size: 100% 100%; 
+		padding-top:8%;
+		padding-bottom : 5%; 
+		background-repeat: no-repeat;
+	}
+	#userRegistration{
+		width:400px;
+		height : 300px;
+		background-size: 400px 300px;  
+		background-image: url('assets/border2.png'); 
+		background-repeat: no-repeat;
+		padding-top: 6%;
+		color : white;
+	}
+	#submit{
+		 padding: 5px 10px 5px 10px;
+		 background-color: aqua;
+	}
+	sup{
+		color: red;
+	}
+	#logo{
+		float : left;
+		width :145px;
+		position :relative;
+		top : -6px;
+		padding-left: 8%;
+	}
+	body{
+		background:url("assets/wb.jpg");
+	}
+</style>
+</head>
+<body>
+<div id="logo">
+	<img id="logo" src="assets/final_logo.png">
+</div>
+<div id="gameBack" align="center" style="padding-top: 4%;">
+
+	<div id="gameDiv">
+	
+		<div id="userRegistration">
+			<form action="/HungryShark/sessionStart" method="post">
+				<sup>*</sup>Name :<input type="text" name="name"><br><br>
+				<sup>*</sup>Email :<input type="email" name="email"><br><br>
+				<input id="submit" type="submit" value="Start Game">
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
